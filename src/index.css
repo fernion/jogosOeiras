@@ -17,6 +17,7 @@ a {
   font-weight: 500;
   color: #528fc2;
   text-decoration: inherit;
+  text-align: start;
 }
 a:hover {
   color: #53c0f2;
@@ -34,25 +35,40 @@ h1 {
 button {
   border-radius: 8px;
   border: 1px solid transparent;
-  padding: 0.6em 1.2em;
+  padding: 0.3em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  /*background-color: #1a1a1a;*/
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: background-color 0.25s;
+  display: flex;
+  align-items: center;
 }
-button:hover {
-  border-color: #646cff;
+button:hover:enabled {
+  background-color: #929292;
 }
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
+table {
+  border-collapse: collapse;
+  border-spacing: 2px;
+}
+
+tr {
+  border-bottom: 1px solid rgb(73, 72, 72);
+  padding: 2px;
+}
+
+tbody tr:hover {
+  background-color: rgb(27, 27, 27);
+}
+
+th,
+td {
+	padding: 0.25rem 0.75rem;
 }
 
 .game-list {
@@ -74,27 +90,54 @@ body {
   font-size: 11px;
 }
 
-
-.thumbnail {
-  max-height: 40px;
+input, select {
+  border-radius: 4px;
+  border: 1px solid white;
 }
 
 .paginator {
   display: flex;
   align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+  flex-wrap: wrap;
+}
+
+.paginator-info, .paginator-buttons {
+  display: flex;
+  align-items: center;
   gap: 4px;
 }
 
-.page-counter {
+.paginator-counter {
   display: flex;
   gap: 4px;
 }
 
-.page-field {
+.paginator-size {
+  border-left: 1px solid rgb(73, 72, 72);
+  padding: 4px;
   display: flex;
   gap: 4px;
 }
 
-a {
+.game-name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
 
+.game-name .thumbnail {
+  min-width: 50px
+}
+
+.thumbnail img {
+  max-height: 40px;
+}
+
+.game-name > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }

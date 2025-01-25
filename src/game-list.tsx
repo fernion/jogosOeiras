@@ -41,20 +41,11 @@ export const GameList = () => {
     const columns = React.useMemo<ColumnDef<GameDetail, any>[]>(
         () => [
             {
-                accessorFn: row => row.thumbnail,
-                id: 'image',
-                cell: info => {
-                    return <img src={info.getValue()} className="thumbnail" />;
-                },
-                header: 'Image',
-                enableColumnFilter: false,
-            },
-            {
                 accessorFn: row => row.names[0].value,
                 id: 'name',
                 cell: info => {
-                    const id = info.row.original.id;
-                    return <a href={`https://boardgamegeek.com/boardgame/${id}`}>{info.getValue()}</a>
+                    const item = info.row.original;
+                    return <NameCell game={item}>{info.getValue()}</NameCell>
                 },
                 header: 'Name',
             },
@@ -63,7 +54,7 @@ export const GameList = () => {
                 id: 'rating',
                 cell: info => {
                     const rating = info.row.original.statistics.ratings;
-                    return <Rating users={rating.usersRated} value={rating.average} />
+                    return <RatingCell users={rating.usersRated} value={rating.average} />
                 },
                 header: 'Rating',
             },
@@ -149,10 +140,7 @@ export const GameList = () => {
                                 {row.getVisibleCells().map(cell => {
                                     return (
                                         <td key={cell.id}>
-                                            {flexRender(
-                                                cell.column.columnDef.cell,
-                                                cell.getContext()
-                                            )}
+                                            {flexRender(cell.column.columnDef.cell, cell.getContext())}
                                         </td>
                                     )
                                 })}
@@ -162,64 +150,54 @@ export const GameList = () => {
                 </tbody>
             </table>
             <div className="paginator">
-                <button
-                    onClick={() => table.setPageIndex(0)}
-                    disabled={!table.getCanPreviousPage()}
-                >
-                    {'<<'}
-                </button>
-                <button
-                    onClick={() => table.previousPage()}
-                    disabled={!table.getCanPreviousPage()}
-                >
-                    {'<'}
-                </button>
-                <button
-                    onClick={() => table.nextPage()}
-                    disabled={!table.getCanNextPage()}
-                >
-                    {'>'}
-                </button>
-                <button
-                    onClick={() => table.setPageIndex(table.getPageCount() - 1)}
-                    disabled={!table.getCanNextPage()}
-                >
-                    {'>>'}
-                </button>
-                <span className="page-counter">
-                    <div>Page</div>
-                    <strong>
-                        {table.getState().pagination.pageIndex + 1} of{' '}
-                        {table.getPageCount()}
-                    </strong>
-                </span>
-                <span className="page-field">
-                    | Go to page:
-                    <input
-                        type="number"
-                        min="1"
-                        max={table.getPageCount()}
-                        defaultValue={table.getState().pagination.pageIndex + 1}
-                        onChange={e => {
-                            const page = e.target.value ? Number(e.target.value) - 1 : 0
-                            table.setPageIndex(page)
-                        }}
-                    />
-                </span>
-                <select
-                    value={table.getState().pagination.pageSize}
-                    onChange={e => {
-                        table.setPageSize(Number(e.target.value))
-                    }}
-                >
-                    {[10, 20, 30, 40, 50].map(pageSize => (
-                        <option key={pageSize} value={pageSize}>
-                            Show {pageSize}
-                        </option>
-                    ))}
-                </select>
+                <div className='paginator-buttons'>
+                    <button onClick={() => table.setPageIndex(0)} disabled={!table.getCanPreviousPage()} >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16px" viewBox="0 0 24 24"><path d="M18.41,16.59L13.82,12L18.41,7.41L17,6L11,12L17,18L18.41,16.59M6,6H8V18H6V6Z" /></svg>
+                    </button>
+                    <button onClick={() => table.previousPage()} disabled={!table.getCanPreviousPage()} >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16px" viewBox="0 0 24 24"><path d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z" /></svg>
+                    </button>
+                    <button onClick={() => table.nextPage()} disabled={!table.getCanNextPage()} >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16px" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
+                    </button>
+                    <button onClick={() => table.setPageIndex(table.getPageCount() - 1)} disabled={!table.getCanNextPage()} >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16px" viewBox="0 0 24 24"><path d="M5.59,7.41L10.18,12L5.59,16.59L7,18L13,12L7,6L5.59,7.41M16,6H18V18H16V6Z" /></svg>
+                    </button>
+                </div>
+                <div className='paginator-info'>
+                    <span className="paginator-counter">
+                        <div>Página</div>
+                        <input
+                            type="number"
+                            min="1"
+                            max={table.getPageCount()}
+                            defaultValue={table.getState().pagination.pageIndex + 1}
+                            onChange={e => {
+                                const page = e.target.value ? Number(e.target.value) - 1 : 0
+                                table.setPageIndex(page)
+                            }}
+                        />
+                        <strong>
+                            de {table.getPageCount()}
+                        </strong>
+                    </span>
+                    <div className="paginator-size">
+                        <span>Ver </span>
+                        <select
+                            value={table.getState().pagination.pageSize}
+                            onChange={e => {
+                                table.setPageSize(Number(e.target.value))
+                            }}
+                        >
+                            {[10, 20, 30, 40, 50].map(pageSize => (
+                                <option key={pageSize} value={pageSize}>
+                                    {pageSize}
+                                </option>
+                            ))}
+                        </select>
+                    </div>
+                </div>
             </div>
-            <div>{table.getPrePaginationRowModel().rows.length} Rows</div>
         </div>
     )
 }
@@ -266,9 +244,8 @@ function Filter({ column }: { column: Column<any, unknown> }) {
         </select>
     ) : (
         <DebouncedInput
-            className="w-36 border shadow rounded"
             onChange={value => column.setFilterValue(value)}
-            placeholder={`Search...`}
+            placeholder={`Procurar...`}
             type="text"
             value={(columnFilterValue ?? '') as string}
         />
@@ -307,7 +284,18 @@ function DebouncedInput({
     )
 }
 
-const Rating = ({ users, value }: { users: string, value: string }) => {
-
+const RatingCell = ({ users, value }: { users: string, value: string }) => {
     return <div className="rating"><span>{(+value).toFixed(1)}</span><span>({users})</span></div>
+}
+
+const NameCell = ({ game, children }: { game: GameDetail, children: string }) => {
+    return (
+        <div className="game-name">
+            <span className='thumbnail'><img src={game.thumbnail} /></span>
+            <div>
+                <a href={`https://boardgamegeek.com/boardgame/${game.id}`}>{children}</a>
+                <span className='game-date'>({game.yearPublished})</span>
+            </div>
+        </div>
+    );
 }
