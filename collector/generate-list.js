@@ -191,7 +191,6 @@ const notFound = [
     "Shepherd Mess",
 ]
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const collectGameIds = async (names) => {
     const games = [];
     //split the names into chunks to avoid too many parallel requests
@@ -201,7 +200,6 @@ const collectGameIds = async (names) => {
         }
         const game = await getGame(name);
         if (game) {
-            // eslint-disable-next-line @typescript-eslint/no-unused-vars
             const { type, ...gameLog } = game;
             console.log(`"${name}": ${JSON.stringify(gameLog)},`)
             games.push(game);
@@ -224,5 +222,7 @@ for (const chunk of result) {
     allGameDetails.push(...games.items);
 }
 
+console.log(allGameDetails)
 
-writeFileSync(`./gameDetails.json`, JSON.stringify(allGameDetails, null, 2));
+
+//writeFileSync(`../src/gameDetails.json`, JSON.stringify(allGameDetails, null, 2));
