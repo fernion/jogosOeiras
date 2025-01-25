@@ -47,7 +47,7 @@ export const GameList = () => {
                     const item = info.row.original;
                     return <NameCell game={item}>{info.getValue()}</NameCell>
                 },
-                header: 'Name',
+                header: 'Nome',
             },
             {
                 accessorFn: row => row.statistics.ratings.average,
@@ -56,19 +56,19 @@ export const GameList = () => {
                     const rating = info.row.original.statistics.ratings;
                     return <RatingCell users={rating.usersRated} value={rating.average} />
                 },
-                header: 'Rating',
+                header: 'Pontuação',
             },
             {
                 accessorFn: row => `${row.minPlayers}-${row.maxPlayers}`,
                 id: 'players',
                 cell: info => info.getValue(),
-                header: 'Players',
+                header: '# Jogadores',
             },
             {
                 accessorFn: row => `${row.minPlayTime}-${row.maxPlayTime}`,
                 id: 'duration',
                 cell: info => info.getValue(),
-                header: 'Duration',
+                header: 'Duração',
             },
         ],
         []
