@@ -52,7 +52,10 @@ export const GameList = () => {
             {
                 accessorFn: row => row.names[0].value,
                 id: 'name',
-                cell: info => info.getValue(),
+                cell: info => {
+                    const id = info.row.original.id;
+                    return <a href={`https://boardgamegeek.com/boardgame/${id}`}>{info.getValue()}</a>
+                },
                 header: 'Name',
             },
             {
@@ -99,7 +102,7 @@ export const GameList = () => {
     })
 
     return (
-        <div className="p-2">
+        <div className="game-list">
             <table>
                 <thead>
                     {table.getHeaderGroups().map(headerGroup => (
