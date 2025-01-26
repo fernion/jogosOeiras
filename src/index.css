@@ -134,6 +134,7 @@ input, select {
 
 .thumbnail img {
   max-height: 40px;
+  max-width: 40px;
 }
 
 .game-name > div {
