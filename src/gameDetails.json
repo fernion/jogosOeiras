@@ -47416,10 +47416,10 @@
     }
   },
   {
-    "id": "38133",
+    "id": "242302",
     "type": "boardgame",
-    "thumbnail": "https://cf.geekdo-images.com/G4tEQk-tyjDozqQSYjPJgA__thumb/img/bisiTUPUdz2PxcxS-FC7UNPLxjo=/fit-in/200x150/filters:strip_icc()/pic1449477.jpg",
-    "image": "https://cf.geekdo-images.com/G4tEQk-tyjDozqQSYjPJgA__original/img/nmvRrdDkpA-vE61HKnddhsF0bcs=/0x0/filters:format(jpeg)/pic1449477.jpg",
+    "thumbnail": "https://cf.geekdo-images.com/MHhQxXVjiaa6C-04nGiIWw__thumb/img/rgETRyeuYs_wiZ5y-9Zj5H8kyFo=/fit-in/200x150/filters:strip_icc()/pic6640638.jpg",
+    "image": "https://cf.geekdo-images.com/MHhQxXVjiaa6C-04nGiIWw__original/img/QyWen0FVOKD_4wf7Na7fdsMTjis=/0x0/filters:format(jpeg)/pic6640638.jpg",
     "names": [
       {
         "type": "primary",
@@ -47427,268 +47427,28 @@
         "value": "Space Base"
       }
     ],
-    "description": "&ldquo;Players control rival commercial colonies on a small piece of stable crust on a volcanic moon.&rdquo; Watch out for the random meteor strikes!&#10;&#10;The game is played on a 10x10 grid with spaces large enough to hold one game card. Each player starts out with one Outpost located in a corner of the map. The deck of 120 cards contains a variety of installations, resources, and volcanic sites. The players earn income from installations. Some installations are required to be adjacent to a certain site or sites in order to produce income.&#10;&#10;&ldquo;The game ends when the last card is drawn from the deck. The player with the most credits at the end of the game is the winner.&rdquo;&#10;&#10;",
-    "yearPublished": "1999",
+    "description": "In Space Base, players assume the roles of Commodores of a small fleet of ships. Ships begin docked at their stations and are then deployed to sectors as new ships are commissioned under your command. Use cargo vessels to engage in trade and commerce; mining vessels to build reoccurring base income; and carriers to spread your influence. Establish new colonies for a new Commodore in a sector to gain even more influence. Gain enough influence and you can be promoted to Admiral!&#10;&#10;Space Base is a quick-to-learn, quick-to-play dice game using the core &quot;I roll, everyone gets stuff&quot; mechanism seen in other games. It's also a strategic engine builder using a player board (your space base) and tableaus of ship cards you can buy and add to your board. The cards you buy and the order you buy them in have interesting implications on your engine beyond just the ability on the card you buy, making for a different type of engine construction than seen in similar games. Players can take their engine in a number of directions: long odds and explosive gains, low luck and steady income, big end-game combos to launch from last to first, or a mix-and-match approach. Ultimately, Space Base is a game you can just start playing and teach everyone how to play in the first round or two and has a satisfying blend of dice-chucking luck and challenging strategic choices.&#10;&#10;",
+    "yearPublished": "2018",
     "minPlayers": "2",
-    "maxPlayers": "4",
-    "playingTime": "0",
-    "minPlayTime": "0",
-    "maxPlayTime": "0",
-    "minAge": "0",
-    "links": [
-      {
-        "type": "boardgamecategory",
-        "id": "1029",
-        "value": "City Building"
-      },
-      {
-        "type": "boardgamecategory",
-        "id": "1021",
-        "value": "Economic"
-      },
-      {
-        "type": "boardgamecategory",
-        "id": "1088",
-        "value": "Industry / Manufacturing"
-      },
-      {
-        "type": "boardgamecategory",
-        "id": "1016",
-        "value": "Science Fiction"
-      },
-      {
-        "type": "boardgamemechanic",
-        "id": "2002",
-        "value": "Tile Placement"
-      },
-      {
-        "type": "boardgamefamily",
-        "id": "78567",
-        "value": "Components: 10 x 10 Grids"
-      },
-      {
-        "type": "boardgamedesigner",
-        "id": "810",
-        "value": "Lloyd Krassner"
-      },
-      {
-        "type": "boardgamepublisher",
-        "id": "873",
-        "value": "Warp Spawn Games"
-      }
-    ],
-    "polls": [
-      {
-        "name": "suggested_numplayers",
-        "title": "User Suggested Number of Players",
-        "totalvotes": "0",
-        "results": [
-          {
-            "numplayers": "1",
-            "result": [
-              {
-                "value": "Best",
-                "numvotes": "0"
-              },
-              {
-                "value": "Recommended",
-                "numvotes": "0"
-              },
-              {
-                "value": "Not Recommended",
-                "numvotes": "0"
-              }
-            ]
-          },
-          {
-            "numplayers": "2",
-            "result": [
-              {
-                "value": "Best",
-                "numvotes": "0"
-              },
-              {
-                "value": "Recommended",
-                "numvotes": "0"
-              },
-              {
-                "value": "Not Recommended",
-                "numvotes": "0"
-              }
-            ]
-          },
-          {
-            "numplayers": "3",
-            "result": [
-              {
-                "value": "Best",
-                "numvotes": "0"
-              },
-              {
-                "value": "Recommended",
-                "numvotes": "0"
-              },
-              {
-                "value": "Not Recommended",
-                "numvotes": "0"
-              }
-            ]
-          },
-          {
-            "numplayers": "4",
-            "result": [
-              {
-                "value": "Best",
-                "numvotes": "0"
-              },
-              {
-                "value": "Recommended",
-                "numvotes": "0"
-              },
-              {
-                "value": "Not Recommended",
-                "numvotes": "0"
-              }
-            ]
-          },
-          {
-            "numplayers": "4+",
-            "result": [
-              {
-                "value": "Best",
-                "numvotes": "0"
-              },
-              {
-                "value": "Recommended",
-                "numvotes": "0"
-              },
-              {
-                "value": "Not Recommended",
-                "numvotes": "0"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "suggested_playerage",
-        "title": "User Suggested Player Age",
-        "totalvotes": "0",
-        "results": [
-          {
-            "value": "2",
-            "numvotes": "0"
-          },
-          {
-            "value": "3",
-            "numvotes": "0"
-          },
-          {
-            "value": "4",
-            "numvotes": "0"
-          },
-          {
-            "value": "5",
-            "numvotes": "0"
-          },
-          {
-            "value": "6",
-            "numvotes": "0"
-          },
-          {
-            "value": "8",
-            "numvotes": "0"
-          },
-          {
-            "value": "10",
-            "numvotes": "0"
-          },
-          {
-            "value": "12",
-            "numvotes": "0"
-          },
-          {
-            "value": "14",
-            "numvotes": "0"
-          },
-          {
-            "value": "16",
-            "numvotes": "0"
-          },
-          {
-            "value": "18",
-            "numvotes": "0"
-          },
-          {
-            "value": "21 and up",
-            "numvotes": "0"
-          }
-        ]
-      },
-      {
-        "name": "language_dependence",
-        "title": "Language Dependence",
-        "totalvotes": "0",
-        "results": [
-          {
-            "level": "91",
-            "value": "No necessary in-game text",
-            "numvotes": "0"
-          },
-          {
-            "level": "92",
-            "value": "Some necessary text - easily memorized or small crib sheet",
-            "numvotes": "0"
-          },
-          {
-            "level": "93",
-            "value": "Moderate in-game text - needs crib sheet or paste ups",
-            "numvotes": "0"
-          },
-          {
-            "level": "94",
-            "value": "Extensive use of text - massive conversion needed to be playable",
-            "numvotes": "0"
-          },
-          {
-            "level": "95",
-            "value": "Unplayable in another language",
-            "numvotes": "0"
-          }
-        ]
-      }
-    ],
+    "maxPlayers": "5",
+    "playingTime": "60",
+    "minPlayTime": "60",
+    "maxPlayTime": "60",
+    "minAge": "14",
     "statistics": {
       "page": "1",
       "ratings": {
-        "usersRated": "3",
-        "average": "6.75",
-        "bayesAverage": "0",
-        "ranks": [
-          {
-            "type": "subtype",
-            "id": "1",
-            "name": "boardgame",
-            "friendlyName": "Board Game Rank",
-            "value": "Not Ranked",
-            "bayesAverage": "Not Ranked"
-          }
-        ]
-      },
-      "stdDev": "1.27475",
-      "median": "0",
-      "owned": "2",
-      "trading": "0",
-      "wanting": "0",
-      "wishing": "4",
-      "numComments": "2",
-      "numWeights": "1",
-      "averageWeight": "3"
+        "usersRated": "20614",
+        "average": "7.54301",
+        "bayesAverage": "7.32027"
+      }
     }
   },
   {
     "id": "60794",
     "type": "boardgame",
+    "thumbnail": "https://cf.geekdo-images.com/c4TmP5Ea8M1oBqtdZR6evw__thumb/img/1jlo5FQLG37lZvT_9GGkPHOG8ow=/fit-in/200x150/filters:strip_icc()/pic3159338.jpg",
+    "image": "https://cf.geekdo-images.com/c4TmP5Ea8M1oBqtdZR6evw__original/img/r8bJKyP3hmpvWvcw6Dro7IU4aUg=/0x0/filters:format(jpeg)/pic3159338.jpg",
     "names": [
       {
         "type": "primary",
@@ -47696,256 +47456,20 @@
         "value": "Spaghetti"
       }
     ],
-    "description": "Players take turns to roll a die. When a player rolls the color of his/her plate, he or she grabs a fork and tries to disentangle noodles of the corresponding color from the mess on the plate in the middle of the table. The others keep rolling at the same time; when another player rolls his/her color, he/she takes over the fork. The player with most noodles at the end of the game is the winner.&#10;&#10;",
-    "yearPublished": "1982",
+    "description": "Spaghetti is a dexterity game in which players compete to pull out as many valuable spaghetti noodles as possible. There are 27 noodles on the plate that vary in colors, length and points:&#10;&#10;&#10; 10 natural = 1 vp &#10; 8 tomato = 2 vp&#10; 6 spinach = 3 vp&#10; 3 sepia = 4 vp&#10;&#10;&#10;A player has only twenty seconds to collect the best pieces, but eating spaghetti requires great care. If anything falls off the plate and stains the table, the player's turn ends immediately. A player can use only one hand and can touch only one noodle at a time at one point. If pulling a noodle causes a meatball to start rolling off the plate, the player can drop the noodle to try to catch the meatball. At the moment the meatball is grabbed, it cannot be touching any noodles on the plate. These skillfully caught meatballs are worth one point at the end of the game.&#10;&#10;The game ends when the plate is empty, with no pasta and no meatballs, and whoever scores the most points wins.&#10;&#10;There are two additional difficulty levels: Spaghetti Difficili and Spaghetti Superiori.&#10;&#10;&#10; Spaghetti Difficili differs from the basic game in the number of meatballs (now four) and the size of plate on which spaghetti is served (players choose a small one).&#10;&#10;&#10;&#10; In Spaghetti Superiori, players earn extra points for fulfilling Italian recipes. There are 12 recipe tokens in total, each shows spaghetti ingredients. Players must remove those ingredients to claim the token. A player must get all of a token's ingredients during a single 20-second turn.&#10;&#10;&#10;",
+    "yearPublished": "2016",
     "minPlayers": "2",
     "maxPlayers": "4",
-    "playingTime": "5",
-    "minPlayTime": "5",
-    "maxPlayTime": "5",
-    "minAge": "5",
-    "links": [
-      {
-        "type": "boardgamecategory",
-        "id": "1032",
-        "value": "Action / Dexterity"
-      },
-      {
-        "type": "boardgamecategory",
-        "id": "1041",
-        "value": "Children's Game"
-      },
-      {
-        "type": "boardgamemechanic",
-        "id": "2072",
-        "value": "Dice Rolling"
-      },
-      {
-        "type": "boardgamefamily",
-        "id": "64233",
-        "value": "Food & Drink: Pasta/Spaghetti"
-      },
-      {
-        "type": "boardgamefamily",
-        "id": "5841",
-        "value": "Theme: Food / Cooking"
-      },
-      {
-        "type": "boardgamedesigner",
-        "id": "3075",
-        "value": "Walter Wolf Windisch"
-      },
-      {
-        "type": "boardgamepublisher",
-        "id": "74",
-        "value": "ASS Altenburger Spielkarten"
-      }
-    ],
-    "polls": [
-      {
-        "name": "suggested_numplayers",
-        "title": "User Suggested Number of Players",
-        "totalvotes": "0",
-        "results": [
-          {
-            "numplayers": "1",
-            "result": [
-              {
-                "value": "Best",
-                "numvotes": "0"
-              },
-              {
-                "value": "Recommended",
-                "numvotes": "0"
-              },
-              {
-                "value": "Not Recommended",
-                "numvotes": "0"
-              }
-            ]
-          },
-          {
-            "numplayers": "2",
-            "result": [
-              {
-                "value": "Best",
-                "numvotes": "0"
-              },
-              {
-                "value": "Recommended",
-                "numvotes": "0"
-              },
-              {
-                "value": "Not Recommended",
-                "numvotes": "0"
-              }
-            ]
-          },
-          {
-            "numplayers": "3",
-            "result": [
-              {
-                "value": "Best",
-                "numvotes": "0"
-              },
-              {
-                "value": "Recommended",
-                "numvotes": "0"
-              },
-              {
-                "value": "Not Recommended",
-                "numvotes": "0"
-              }
-            ]
-          },
-          {
-            "numplayers": "4",
-            "result": [
-              {
-                "value": "Best",
-                "numvotes": "0"
-              },
-              {
-                "value": "Recommended",
-                "numvotes": "0"
-              },
-              {
-                "value": "Not Recommended",
-                "numvotes": "0"
-              }
-            ]
-          },
-          {
-            "numplayers": "4+",
-            "result": [
-              {
-                "value": "Best",
-                "numvotes": "0"
-              },
-              {
-                "value": "Recommended",
-                "numvotes": "0"
-              },
-              {
-                "value": "Not Recommended",
-                "numvotes": "0"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "suggested_playerage",
-        "title": "User Suggested Player Age",
-        "totalvotes": "0",
-        "results": [
-          {
-            "value": "2",
-            "numvotes": "0"
-          },
-          {
-            "value": "3",
-            "numvotes": "0"
-          },
-          {
-            "value": "4",
-            "numvotes": "0"
-          },
-          {
-            "value": "5",
-            "numvotes": "0"
-          },
-          {
-            "value": "6",
-            "numvotes": "0"
-          },
-          {
-            "value": "8",
-            "numvotes": "0"
-          },
-          {
-            "value": "10",
-            "numvotes": "0"
-          },
-          {
-            "value": "12",
-            "numvotes": "0"
-          },
-          {
-            "value": "14",
-            "numvotes": "0"
-          },
-          {
-            "value": "16",
-            "numvotes": "0"
-          },
-          {
-            "value": "18",
-            "numvotes": "0"
-          },
-          {
-            "value": "21 and up",
-            "numvotes": "0"
-          }
-        ]
-      },
-      {
-        "name": "language_dependence",
-        "title": "Language Dependence",
-        "totalvotes": "0",
-        "results": [
-          {
-            "level": "1",
-            "value": "No necessary in-game text",
-            "numvotes": "0"
-          },
-          {
-            "level": "2",
-            "value": "Some necessary text - easily memorized or small crib sheet",
-            "numvotes": "0"
-          },
-          {
-            "level": "3",
-            "value": "Moderate in-game text - needs crib sheet or paste ups",
-            "numvotes": "0"
-          },
-          {
-            "level": "4",
-            "value": "Extensive use of text - massive conversion needed to be playable",
-            "numvotes": "0"
-          },
-          {
-            "level": "5",
-            "value": "Unplayable in another language",
-            "numvotes": "0"
-          }
-        ]
-      }
-    ],
+    "playingTime": "30",
+    "minPlayTime": "20",
+    "maxPlayTime": "30",
+    "minAge": "6",
     "statistics": {
       "page": "1",
       "ratings": {
-        "usersRated": "1",
-        "average": "5",
-        "bayesAverage": "0",
-        "ranks": [
-          {
-            "type": "subtype",
-            "id": "1",
-            "name": "boardgame",
-            "friendlyName": "Board Game Rank",
-            "value": "Not Ranked",
-            "bayesAverage": "Not Ranked"
-          },
-          {
-            "type": "family",
-            "id": "4665",
-            "name": "childrensgames",
-            "friendlyName": "Children's Game Rank",
-            "value": "Not Ranked",
-            "bayesAverage": "Not Ranked"
-          }
-        ]
+        "usersRated": "243",
+        "average": "5.86525",
+        "bayesAverage": "5.52951"
       },
       "stdDev": "0",
       "median": "0",
