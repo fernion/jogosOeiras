@@ -147,7 +147,6 @@ const mappedGames = {
     "Wisdom of Solomon": { "id": "244452", "name": "Wisdom of Solomon", "yearPublished": "2018" },
     "Aventuras Fantasticas": { "id": "278004", "name": "Aventuras Fantásticas", "yearPublished": "2019" },
     "Blue Lion": { "id": "104555", "name": "The Blue Lion", "yearPublished": "2011" },
-    "Cards Lab": { "id": "382260", "name": "Cards of the Dead: The Laboratory (Day 3)", "yearPublished": "2023" },
     "Castelo S. Jorge": { "id": "172938", "name": "O Castelo de S. Jorge", "yearPublished": "2010" },
     "Douro": { "id": "256380", "name": "Douro 1872", "yearPublished": "2018" },
     "Drunter  Druber": { "id": "167675", "name": "Drunter und drüber" },
