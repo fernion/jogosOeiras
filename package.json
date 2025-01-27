@@ -5,6 +5,7 @@
   "type": "module",
   "homepage": "https://fernion.github.io/jogosOeiras",
   "scripts": {
+    "generate": "node ./collector/generate-list.js",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
